@@ -1,0 +1,54 @@
+The test will take 1 to 1:30 hours to complete. Please see the following information:
+
+1. Create a migration for a "users" table with the following columns:
+'id' (primary key)
+'name' (string)
+'email' (string)
+'password' (string)
+'remember_token' (string, nullable)
+'created_at' (timestamp)
+'updated_at' (timestamp)
+
+2. Create a migration for a "posts" table with the following columns:
+'id' (primary key)
+'title' (string)
+'body' (text)
+'like_count' (integer)
+'dislike_count' (integer)
+'user_id' (foreign key referencing the 'id' column of the 'users' table)
+'created_at' (timestamp)
+'updated_at' (timestamp)
+
+3. Create a migration for a "comments" table with the following columns:
+'id' (primary key)
+'body' (text)
+'user_id' (foreign key referencing the 'id' column of the 'users' table)
+'post_id' (foreign key referencing the 'id' column of the 'posts' table)
+'created_at' (timestamp)
+'updated_at' (timestamp)
+
+>>>>>>
+1. Create a login page where login will be with a mobile number or OTP. After logging in, redirect to the My Profile page. Use the API for login and OTP verification. Apply the design to the login.
+
+2. Create a route to show a list of all posts with their title, author name, and the number of comments they have. The route should display the data in a table.
+
+3. Implement search functionality for the list of posts. The search should filter posts based on their title, author name, and the number of comments they have.
+
+4. Create a form that allows users to create new posts. The form should have the following fields:
+'title' (required)
+'body' (required)
+
+5. Open a modal on the button click of every post that allows users to add comments to a post. The modal form should be submitted using AJAX with the following fields:
+'body' (required)
+
+6. Implement a basic like/dislike feature for posts. Users should only be able to like or dislike a post once. The test should ensure that a user can successfully like and dislike a post and that the total number of likes and dislikes is updated accordingly.
+
+7. Implement a command to generate a PDF of all posts, including their title, author name, number of comments they have, and the created_at timestamp.
+
+8. Add form validation for all forms in the application.
+
+Please reach out to us with any queries!
+
+Give it the best you can; we do appreciate creativity.
+
+Good Luck!
